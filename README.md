@@ -16,7 +16,7 @@ i) open cmd and navigate to your workspace or the location where you have the pr
 I have used two profile names, which you can see in the pom.xml file in the project. One of them is Regression.
  
 2) Using Jenkins
-download jenkins LTS file from the url :https://www.jenkins.io/download/
+download jenkins LTS file from the url : https://www.jenkins.io/download/
 open cmd and cd to the folder where jenkins war file is downloaded and give command : java -jar jenkins.war --httpPort=9090
 let it download the dependencies and then enter the secret key which will will be stored in your system. Jenkins will give you the folder path as well.
 Once you enter the secret key, let the installation complete and then setup a username and password.
