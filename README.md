@@ -6,7 +6,6 @@ This is a maven project.
 
 This project incorporates end to end testing of a websites using various locators , data driven testing , use of listeners, grouping of methods etc.
 
-
 There are 2 ways you can run the project tests after importing it into your system.(Windows)
 1) Using Command Line Interface
 For running in cmd all you have to do is install maven into your system and then make sure you add it to the system environment variables.
