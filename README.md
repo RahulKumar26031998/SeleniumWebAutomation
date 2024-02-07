@@ -21,7 +21,7 @@ open cmd and cd to the folder where jenkins war file is downloaded and give comm
 let it download the dependencies and then enter the secret key which will will be stored in your system. Jenkins will give you the folder path as well.
 Once you enter the secret key, let the installation complete and then setup a username and password.
 
-now open any browser and type localhost:9090
+now open any browser and type -> localhost:9090
 
 give the userid and passwor and setup your account.
 i) click on new Item and select 'Freestyle project' and give a name to your item. Click OK.
