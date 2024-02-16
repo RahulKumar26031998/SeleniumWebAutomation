@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Cucumber.TestNGTestRunner">
+      <class name="seleniumautomation.tests.ErrorValidationsTest">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="closeApplication"/>
+          <include name="launchApplication"/>
+          <include name="LoginErrorValidation"/>
         </methods>
-      </class> <!-- Cucumber.TestNGTestRunner -->
+      </class> <!-- seleniumautomation.tests.ErrorValidationsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
