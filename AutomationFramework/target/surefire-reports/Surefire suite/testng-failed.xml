@@ -3,21 +3,6 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="seleniumautomation.tests.StandAloneTest">
-        <methods>
-          <include name="productErrorValidation"/>
-          <include name="closeApplication"/>
-          <include name="launchApplication"/>
-        </methods>
-      </class> <!-- seleniumautomation.tests.StandAloneTest -->
-      <class name="seleniumautomation.tests.SubmitOrderTest">
-        <methods>
-          <include name="verifyOrdersHistory"/>
-          <include name="closeApplication"/>
-          <include name="launchApplication"/>
-          <include name="findDesiredProduct" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- seleniumautomation.tests.SubmitOrderTest -->
       <class name="seleniumautomation.tests.ErrorValidationsTest">
         <methods>
           <include name="closeApplication"/>
@@ -25,6 +10,21 @@
           <include name="LoginErrorValidation"/>
         </methods>
       </class> <!-- seleniumautomation.tests.ErrorValidationsTest -->
+      <class name="seleniumautomation.tests.SubmitOrderTest">
+        <methods>
+          <include name="verifyOrdersHistory"/>
+          <include name="closeApplication"/>
+          <include name="launchApplication"/>
+          <include name="findDesiredProduct"/>
+        </methods>
+      </class> <!-- seleniumautomation.tests.SubmitOrderTest -->
+      <class name="seleniumautomation.tests.StandAloneTest">
+        <methods>
+          <include name="productErrorValidation"/>
+          <include name="closeApplication"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- seleniumautomation.tests.StandAloneTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

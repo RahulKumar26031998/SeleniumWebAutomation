@@ -22,8 +22,9 @@ public class CartPage extends AbstractComponent {
 	@FindBy(css = "ul li div .cartSection h3")
 	List<WebElement> cartItems;
 	
-	public boolean verifyProductName(String productName) {
+	public boolean verifyProductName(String productName) throws InterruptedException {
 		boolean check = cartItems.stream().anyMatch(y -> y.getText().equalsIgnoreCase(productName));
+		Thread.sleep(1000);
 		clickOnCheckOutButton();
 		return check;
 	}

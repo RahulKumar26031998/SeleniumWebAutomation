@@ -21,6 +21,19 @@
 
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>7.15.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.15.0</version>
+		</dependency>
 
 		<!--
 		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
@@ -91,7 +104,7 @@
 		</profile>
 
 		<profile>
-			<id> Group and Parallel test</id>
+			<id> GroupParallelTest </id>
 
 			<build>
 				<pluginManagement><!-- lock down plugins versions to avoid using
@@ -104,7 +117,7 @@
 							<version>3.2.5</version>
 							<configuration>
 								<suiteXmlFiles>
-									<suiteXmlFile>testsuite/testng1.xml</suiteXmlFile>
+									<suiteXmlFile>testsuite/testngGroup.xml</suiteXmlFile>
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
@@ -112,6 +125,29 @@
 				</pluginManagement>
 			</build>
 
+		</profile>
+		
+		<profile>
+			<id>CucumberTests</id>
+
+			<build>
+				<pluginManagement><!-- lock down plugins versions to avoid using
+				Maven
+			defaults (may be moved to parent pom) -->
+					<plugins>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-surefire-plugin</artifactId>
+							<version>3.2.5</version>
+							<configuration>
+								<includes>
+									<include>**/TestNGTestRunner.java</include>
+								</includes>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+			</build>
 		</profile>
 
 

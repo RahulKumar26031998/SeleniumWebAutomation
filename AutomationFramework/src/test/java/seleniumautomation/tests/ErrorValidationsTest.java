@@ -16,7 +16,7 @@ public class ErrorValidationsTest extends BaseTest {
 
 	// TODO Auto-generated method stub
 	// open the website
-	@Test(groups= {"my-group"}, retryAnalyzer = Retry.class)
+	@Test(groups= {"purchaseOrder"}, retryAnalyzer = Retry.class)
 	public void LoginErrorValidation() throws IOException, InterruptedException {
 
 		// enter the creds and login
