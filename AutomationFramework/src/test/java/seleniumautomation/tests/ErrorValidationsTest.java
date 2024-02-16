@@ -20,7 +20,7 @@ public class ErrorValidationsTest extends BaseTest {
 	public void LoginErrorValidation() throws IOException, InterruptedException {
 
 		// enter the creds and login
-		lp.loginApplication("rahulkumar1998@gmail.com", "Passwwword@123/"); // wrong password intentionally
+		lp.loginApplication("rahulkumar1998@gmail.com", "Password@123/"); // wrong password intentionally
 		Assert.assertEquals("Incorrect email email or password.", lp.getErrorMesssage());
 
 	}
