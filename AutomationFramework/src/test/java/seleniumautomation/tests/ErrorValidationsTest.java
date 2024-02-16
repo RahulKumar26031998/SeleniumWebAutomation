@@ -15,7 +15,7 @@ import seleniumautomation.pageobjects.ProductCatalogue;
 public class ErrorValidationsTest extends BaseTest {
 
 	// TODO Auto-generated method stub
-	// open the website
+	// open the website page
 	@Test(groups= {"purchaseOrder"}, retryAnalyzer = Retry.class)
 	public void LoginErrorValidation() throws IOException, InterruptedException {
 
