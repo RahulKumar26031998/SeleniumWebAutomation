@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" parallel="tests" name="Test(failed)" verbose="0">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
       <class name="seleniumautomation.tests.ErrorValidationsTest">
         <methods>
@@ -18,6 +18,13 @@
           <include name="findDesiredProduct"/>
         </methods>
       </class> <!-- seleniumautomation.tests.SubmitOrderTest -->
+      <class name="seleniumautomation.tests.StandAloneTest">
+        <methods>
+          <include name="productErrorValidation"/>
+          <include name="closeApplication"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- seleniumautomation.tests.StandAloneTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

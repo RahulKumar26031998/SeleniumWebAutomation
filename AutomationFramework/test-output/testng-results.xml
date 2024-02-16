@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-06T17:32:10 IST" name="Suite" finished-at="2024-02-06T17:32:10 IST" duration-ms="0">
+  <suite started-at="2024-02-10T15:59:15 IST" name="Default suite" finished-at="2024-02-10T15:59:37 IST" duration-ms="21958">
     <groups>
-      <group name="my-group">
-        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:seleniumautomation.tests.ErrorValidationsTest@5f9be66c]" name="LoginErrorValidation" class="seleniumautomation.tests.ErrorValidationsTest"/>
-      </group> <!-- my-group -->
-      <group name="purchaseOrder">
-        <method signature="SubmitOrderTest.findDesiredProduct(java.util.HashMap)[pri:0, instance:seleniumautomation.tests.SubmitOrderTest@401f7633]" name="findDesiredProduct" class="seleniumautomation.tests.SubmitOrderTest"/>
-      </group> <!-- purchaseOrder -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@242b836]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-  </suite> <!-- Suite -->
+    <test started-at="2024-02-10T15:59:15 IST" name="Default test" finished-at="2024-02-10T15:59:37 IST" duration-ms="21958">
+      <class name="Cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.TestNGTestRunner@242b836]" started-at="2024-02-10T15:59:15 IST" name="setUpClass" finished-at="2024-02-10T15:59:16 IST" duration-ms="1464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7da31a40]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@242b836]" started-at="2024-02-10T15:59:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-10T15:59:37 IST" duration-ms="20274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive test of submitting the order."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from e-commerce website"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.TestNGTestRunner@242b836]" started-at="2024-02-10T15:59:37 IST" name="tearDownClass" finished-at="2024-02-10T15:59:37 IST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Cucumber.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
