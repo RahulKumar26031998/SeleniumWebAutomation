@@ -21,7 +21,7 @@ public class ErrorValidationsTest extends BaseTest {
 
 		// enter the creds and login
 		lp.loginApplication("rahulkumar1998@gmail.com", "Passsword@123/"); // wrong password intentionally
-		Assert.assertEquals("Incorrect email email or password.", lp.getErrorMesssage());
+		Assert.assertEquals("Incorrect email or password.", lp.getErrorMesssage());
 
 	}
 
